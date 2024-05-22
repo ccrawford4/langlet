@@ -11,9 +11,11 @@ import SwiftData
 @main
 struct langletApp: App {
     // Put global state objects here
+    @State private var languages = Language.sampleData
+    
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            HomeView(languages: languages)
         }
     }
 }

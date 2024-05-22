@@ -9,14 +9,31 @@ import Foundation
 import SwiftUI
 
 struct HomeView: View {
+    var languages: [Language]
+    
     var body: some View {
-        Text("Hello World!")
+        NavigationStack {
+            VStack {
+                List(languages) { language in
+                    NavigationLink(destination: {}) {
+                        Text("\(language.icon) \(language.name)")
+                    }
+                }
+            }
+            .navigationTitle("Languages Learning")
+            .toolbar {
+                Button(action: {}) {
+                    Image(systemName: "plus")
+                }
+            }
+            .accessibilityLabel("New Language")
+        }
     }
 }
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        HomeView(languages: Language.sampleData)
     }
 }
 
