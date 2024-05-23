@@ -15,7 +15,7 @@ struct langletApp: App {
     
     var body: some Scene {
         WindowGroup {
-            HomeView(languages: languages)
+            HomeView(languages: .constant(languages))
         }
     }
 }

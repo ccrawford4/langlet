@@ -12,6 +12,7 @@ struct Language: Identifiable, Codable {
     let id: UUID
     var name: String
     var icon: String
+    var formattedTitle: String
     
     // TODO:
     // Possibly consider implementing a Theme here like so:
@@ -21,6 +22,7 @@ struct Language: Identifiable, Codable {
         self.id = id
         self.name = name
         self.icon = icon
+        self.formattedTitle = icon + " " + name
     }
 }
 

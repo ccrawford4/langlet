@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 struct HomeView: View {
-    var languages: [Language]
+    @Binding var languages: [Language]
     
     var body: some View {
         NavigationStack {
@@ -20,6 +20,7 @@ struct HomeView: View {
                     }
                 }
             }
+            .padding(.top)
             .navigationTitle("Languages Learning")
             .toolbar {
                 Button(action: {}) {
@@ -33,7 +34,7 @@ struct HomeView: View {
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView(languages: Language.sampleData)
+        HomeView(languages: .constant(Language.sampleData))
     }
 }
 

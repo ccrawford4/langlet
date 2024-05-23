@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		92005B712BFE615900AC257E /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92005B702BFE615900AC257E /* Language.swift */; };
 		92005B752BFE66B000AC257E /* Flags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92005B742BFE66B000AC257E /* Flags.swift */; };
+		92005B772BFE930C00AC257E /* LanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92005B762BFE930C00AC257E /* LanguageView.swift */; };
 		9237B1572BFE581100AAA1CA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9237B1562BFE581100AAA1CA /* HomeView.swift */; };
 		92DED0EA2BFDA42300C7B99A /* langletApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DED0E92BFDA42300C7B99A /* langletApp.swift */; };
 		92DED0F02BFDA42500C7B99A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92DED0EF2BFDA42500C7B99A /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 /* Begin PBXFileReference section */
 		92005B702BFE615900AC257E /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 		92005B742BFE66B000AC257E /* Flags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flags.swift; sourceTree = "<group>"; };
+		92005B762BFE930C00AC257E /* LanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageView.swift; sourceTree = "<group>"; };
 		9237B1562BFE581100AAA1CA /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		92DED0E62BFDA42300C7B99A /* langlet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = langlet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92DED0E92BFDA42300C7B99A /* langletApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = langletApp.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				9237B1562BFE581100AAA1CA /* HomeView.swift */,
+				92005B762BFE930C00AC257E /* LanguageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				92DED0EA2BFDA42300C7B99A /* langletApp.swift in Sources */,
 				9237B1572BFE581100AAA1CA /* HomeView.swift in Sources */,
 				92005B752BFE66B000AC257E /* Flags.swift in Sources */,
+				92005B772BFE930C00AC257E /* LanguageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
