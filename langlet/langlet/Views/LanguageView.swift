@@ -24,18 +24,21 @@ struct LanguageView: View {
                             .foregroundColor(.accentColor)
                     }
                 }
-                Section(header: Text("Previous Transcriptions")) {
-                   // Empty for now because we have no past recordings
-                }
-            }
-            .navigationTitle(language.formattedTitle)
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button("Edit") {
-                        // edit action here
+                Section(header: Text("History")) {
+                    if language.history.isEmpty {
+                        Label("No past translations", systemImage: "calendar.badge.exclamationmark")
+                    }
+                    ForEach(language.history) { history in
+                        NavigationLink(destination: {}) {
+                            HStack {
+                                Image(systemName: "calendar")
+                                Text(history.date, style: .date)
+                            }
+                        }
                     }
                 }
             }
+            .navigationTitle(language.formattedTitle)
         }
     }
 }

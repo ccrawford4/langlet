@@ -13,10 +13,9 @@ struct Language: Identifiable, Codable {
     var name: String
     var icon: String
     var formattedTitle: String
+    var history: [History] = []
     
-    // TODO:
-    // Possibly consider implementing a Theme here like so:
-    // var theme: Theme
+    // Possibly consider implementing a Theme here
     
     init(id: UUID = UUID(), name: String, icon: String) {
         self.id = id
