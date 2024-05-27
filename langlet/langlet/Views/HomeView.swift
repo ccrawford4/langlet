@@ -14,14 +14,14 @@ struct HomeView: View {
     var body: some View {
         NavigationStack {
             VStack {
-                List(languages) { language in
-                    NavigationLink(destination: {}) {
+                List($languages) { $language in
+                    NavigationLink(destination: LanguageView(language: $language)) {
                         Text("\(language.icon) \(language.name)")
                     }
                 }
             }
             .padding(.top)
-            .navigationTitle("Languages Learning")
+            .navigationTitle("Current Languages")
             .toolbar {
                 Button(action: {}) {
                     Image(systemName: "plus")
